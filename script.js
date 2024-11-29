@@ -7,13 +7,14 @@ function changeBanner(pageType) {
     if (pageType === "home") {
         underlinedId = "projects";
         titleText = "Welcome";
-        descriptionText = "Brief description here";
+        descriptionText = "My name is Harley Johnson.\nI'm a full-stack developer.";
     } else if (pageType === "about") {
         underlinedId = "about";
         titleText = "About Me";
     } else {
         underlinedId = "contact";
         titleText = "Contact Me";
+        document.getElementById("page-title").style.fontSize = '120px';
     }
 
     document.getElementById(underlinedId).style.fontWeight = "bold";

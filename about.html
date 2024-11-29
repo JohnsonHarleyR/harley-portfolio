@@ -16,32 +16,38 @@
 
 <body>
     <header>
-        <p>
-            CodeCraft Studio
-        </p>
+        <div class="container">
+            <p>
+                CodeCraft Studio
+            </p>
+        </div>
     </header>
     <main>
-        <section id="banner-section">
-            <div id="title-area">
-                <img id="half-moon" alt="half moon" src="images/halfMoon.png">
-                <h1 id="page-title"></h1>
-                <p id="title-description"></p>
+        <div id="banner-section" class="container">
+            <div class="row">
+                <div id="title-area" class="col-7">
+                    <img id="half-moon" alt="half moon" src="images/halfMoon.png">
+                    <div id="title-area-text">
+                        <h1 id="page-title"></h1>
+                        <p id="title-description"></p>
+                    </div>
+                </div>
+                <div id="menu-area" class="col-5">
+                    <img id="ufo" alt="UFO" src="images/ufoGreen.png">
+                    <ul id="menu" class="nav flex-column">
+                        <li id="projects" class="nav-item"><a class="nav-link" href="/">Projects</a></li>
+                        <li id="about" class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li id="github" class="nav-item"><a class="nav-link" href="https://github.com/JohnsonHarleyR"
+                                target="_blank">GitHub</a>
+                        </li>
+                        <li id="resume" class="nav-item"><a class="nav-link" href="/files/Harley_Johnson_Resume.pdf"
+                                target="_blank">Resume</a>
+                        </li>
+                        <li id="contact" class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="menu-area">
-                <img id="ufo" alt="UFO" src="images/ufoGreen.png">
-                <ul id="menu" class="nav flex-column">
-                    <li id="about" class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li id="projects" class="nav-item"><a class="nav-link" href="/">Projects</a></li>
-                    <li id="github" class="nav-item"><a class="nav-link" href="https://github.com/JohnsonHarleyR"
-                            target="_blank">GitHub</a>
-                    </li>
-                    <li id="resume" class="nav-item"><a class="nav-link" href="/files/Harley_Johnson_Resume.pdf"
-                            target="_blank">Resume</a>
-                    </li>
-                    <li id="contact" class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         © 2024 Harley Johnson • CodeCraft Studio
