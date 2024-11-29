@@ -61,7 +61,7 @@ let projectsToShow = [
     {
         title: "JavaScript Games",
         languages: "JavaScript, Java, CSS",
-        description: "These are a bunch of games I created when I was first learning how to code in JavaScript a few years ago. I had just completed a Java boot campt and decided to teach myself JavaScript. The games include a matching game, snake, basic sudoku, minesweeper, roadside bingo, tic tac toe, and an evolving pet game.",
+        description: "These are a bunch of games I created when I was first learning how to code in JavaScript a few years ago. I had just completed a Java boot camp and decided to teach myself JavaScript. The games include a matching game, snake, basic sudoku, minesweeper, roadside bingo, tic tac toe, and an evolving pet game.",
         link: "https://github.com/JohnsonHarleyR/JSGamesAndPractice/tree/master/src/main/resources/static/js",
         image: "images/projects/js-games.jpg"
     },
