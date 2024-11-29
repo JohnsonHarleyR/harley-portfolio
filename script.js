@@ -89,25 +89,56 @@ function createProjectCard(data) {
     // append image to link
     cardLink.appendChild(cardImage);
 
-    // apend link to card
+    // append link to card
     card.appendChild(cardLink);
 
+    // create card body
+    let body = document.createElement('div');
+    body.className = "card-body";
+
     // create title for card
+    let title = document.createElement('h3');
+    title.className = "card-title";
+    title.innerText = data.title;
 
     // append title onto card
+    body.appendChild(title);
 
-    // create languages to put on card
+    // create languages bold tag to put word 'languages'
+    // let languagesTag = document.createElement('b');
+    // languagesTag.innerText = "Languages: ";
 
-    // append languages to card
+    // create languages p, put in bold tag followed by languages
+    let languages = document.createElement('p');
+    languages.className = "card-languages card-text";
+    languages.innerHTML = "<b>Languages: </b>" + data.languages;
+
+    // append languages to card body
+    body.appendChild(languages);
 
     // create description for card
+    let description = document.createElement('p');
+    description.className = "card-description card-text";
+    description.innerText = data.description;
 
-    // append description to card
+    // append description to card body
+    body.appendChild(description);
 
-    // append card to container
-    // container.appendChild(card);
+    // create button for bottom
+    let button = document.createElement('a');
+    button.href = data.link;
+    button.setAttribute('target', '_blank');
+    button.setAttribute('rel', 'noopener noreferrer');
+    button.className = "btn btn-info";
+    button.innerText = "See Code";
 
-    // return container as card
+    // append button to body
+    body.appendChild(button);
+
+    // append card body to card
+    card.appendChild(body);
+
+    // return card
     return card;
 }
 
