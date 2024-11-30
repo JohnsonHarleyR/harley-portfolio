@@ -138,13 +138,26 @@ function createProjectCard(data) {
     return card;
 }
 
+function getClassForProjectContainer() {
+    let screenWidth = window.innerWidth;
+    // console.log(screenWidth);
+    let colSize = "col-4";
+    if (screenWidth < 585) {
+        colSize = "col-12";
+    } else if (screenWidth < 992) {
+        colSize = "col-6";
+    }
+
+    return "project-container " + colSize;
+}
+
 function addProjectsToPage() {
     let projectArea = document.getElementById("all-projects");
     // loop through all projects to display them
     for (let i = 0; i <projectsToShow.length; i++) {
         // create container element for grid
         let container = document.createElement("div");
-        container.className = "project-container col-4";
+        container.className = getClassForProjectContainer();
 
         let newCard = createProjectCard(projectsToShow[i]);
         container.appendChild(newCard);
@@ -161,3 +174,13 @@ function openNav() {
 function closeNav() {
 document.getElementById("myNav").style.width = "0%";
 }
+
+// change projects grid upon screen size change
+window.addEventListener('resize', function() {
+    let newProjectContainerClass = getClassForProjectContainer();
+    let projectContainers = document.getElementsByClassName("project-container");
+    for (let i = 0; i < projectContainers.length; i++) {
+        projectContainers[i].className = newProjectContainerClass;
+    }
+  });
+  
