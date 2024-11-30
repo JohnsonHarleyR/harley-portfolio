@@ -104,10 +104,6 @@ function createProjectCard(data) {
     // append title onto card
     body.appendChild(title);
 
-    // create languages bold tag to put word 'languages'
-    // let languagesTag = document.createElement('b');
-    // languagesTag.innerText = "Languages: ";
-
     // create languages p, put in bold tag followed by languages
     let languages = document.createElement('p');
     languages.className = "card-languages card-text";

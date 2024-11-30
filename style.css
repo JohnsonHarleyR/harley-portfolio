@@ -23,7 +23,7 @@
 
     --accent-border: 2px dotted #04d9ff;
 
-    --title-font: "VPPixel", "OrangeKid";
+    --title-font: "VPPixel", "OrangeKid", serif;
     --main-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     --card-width: 20rem;
@@ -90,17 +90,11 @@ h3 {
     font-size: 30px;
 }
 
-/* .container {
-    width: 100%;
-} */
-
 #banner-section {
-    /* border: 1px solid red; */
     height: 500px;
 }
 
 #menu-area {
-    /* border: 1px solid red; */
     position: relative;
     text-align: center;
     display: flex;
@@ -137,7 +131,6 @@ h3 {
     margin-left: auto;
     margin-right: 0;
     text-align: center;
-    /* left: 0; */
     right: 0;
     z-index: 1;
     width: 350px;
@@ -152,17 +145,11 @@ h3 {
     font-size: 30px;
     top: 180px;
     left: 70px;
-    /* right: 0; */
 }
 
 #menu>li {
     height: 55px;
-    /* border: 1px solid red; */
 }
-
-/* .nav-item {
-    margin-bottom: 0;
-} */
 
 .menu-item a {
     text-decoration: none;
@@ -185,7 +172,6 @@ h3 {
 }
 
 .project-container {
-    /* border: 1px solid pink; */
     display: flex;
     justify-content: center;
     padding: var(--padding);
@@ -204,7 +190,6 @@ h3 {
 }
 
 .card-body {
-    /* border: 1px solid red; */
     margin: 1rem;
     margin-top: 0;
 }
@@ -233,7 +218,6 @@ h3 {
     background: var(--half-bg-color);
     margin-top: 20px;
     margin-bottom: 20px;
-    /* border: 1px solid red; */
 }
 
 #contact-row {
@@ -243,18 +227,11 @@ h3 {
 
 .contact-area {
     padding: 20px;
-    /* margin: 20px; */
-    /* border: var(--accent-border);
-    border-radius: var(--round-corners); */
 }
 
 #contact-info {
     font-size: 25px;
     text-shadow: var(--text-border);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* border: 1px solid red; */
 }
 
 #contact-info>ul {
@@ -270,6 +247,28 @@ h3 {
 #contact-image {
     width: 150px;
 }
+
+
+#about-section {
+    margin-bottom: 20px;
+    padding: 24px;
+    background: var(--half-bg-color);
+    border-radius: var(--round-corners);
+}
+
+#about-image {
+    float: left;
+    width: 450px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 25px;
+    text-shadow: var(--text-border);
+}
+
 
 footer {
     text-shadow: var(--text-border);
