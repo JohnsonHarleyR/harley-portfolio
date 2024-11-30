@@ -207,9 +207,13 @@ h3 {
         height: 60px;
     }
 
+    header p {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     #hidden-menu {
         display: block;
-        margin-right: 25px;
     }
 
     #myNav {
