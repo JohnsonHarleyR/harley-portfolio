@@ -152,3 +152,12 @@ function addProjectsToPage() {
         projectArea.appendChild(container);
     }
 }
+
+// Toggle menu when on mobile
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}

@@ -21,7 +21,29 @@
                 CodeCraft Studio
             </p>
         </div>
+        <!--Hidden menu button, only visible for mobile-->
+        <div class="container">
+            <button id="hidden-menu" class="btn btn-outline-light btn-lg" onclick="openNav()">Menu</button>
+        </div>
     </header>
+    <!-- Hidden menu, only available on mobile -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu-area overlay-content">
+            <img class="ufo" alt="UFO" src="images/ufoGreen.png">
+            <ul class="menu nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="/">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/JohnsonHarleyR"
+                        target="_blank">GitHub</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/files/Harley_Johnson_Resume.pdf"
+                        target="_blank">Resume</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <main>
         <div id="banner-section" class="container">
             <div class="row">
@@ -35,6 +57,7 @@
                         <p id="title-description"></p>
                     </div>
                 </div>
+                <!--This menu is not shown on mobile-->
                 <div id="menu-area" class="col-5">
                     <img id="ufo" alt="UFO" src="images/ufoGreen.png">
                     <ul id="menu" class="nav flex-column">

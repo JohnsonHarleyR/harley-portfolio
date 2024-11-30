@@ -126,6 +126,43 @@ h3 {
     background: var(--half-bg-color);
 }
 
+
+@media (width < 760px) {
+    #title-area-text {
+        left: 0px;
+    }
+
+    #title-description {
+        left: 215px;
+    }
+}
+
+@media (width < 585px) {
+    h1 {
+        font-size: 120px;
+    }
+}
+
+@media (width < 475px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    #title-description {
+        left: 150px;
+    }
+}
+
+@media (width < 405px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    #title-description {
+        left: 100px;
+    }
+}
+
 #ufo {
     position: absolute;
     margin-left: auto;
@@ -145,6 +182,113 @@ h3 {
     font-size: 30px;
     top: 180px;
     left: 70px;
+}
+
+@media (width < 1200px) {
+    #menu {
+        left: 30px;
+    }
+}
+
+#hidden-menu {
+    float: right;
+    display: none;
+}
+
+#myNav {
+    display: none;
+}
+
+/* If mobile, make top menu bigger, hide menu, and show hidden menu */
+/* Some of the code used for the pop out menu was learned from https://www.w3schools.com */
+/* Nothing else was taken from a website, just the stuff for a mobile pop out menu */
+@media (width < 992px) {
+    header {
+        height: 60px;
+    }
+
+    #hidden-menu {
+        display: block;
+        margin-right: 25px;
+    }
+
+    #myNav {
+        display: block;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .menu-area {
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ufo {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        left: 0;
+        right: 15px;
+        z-index: 11;
+        width: 350px;
+    }
+
+    .menu-area ul {
+        position: relative;
+        z-index: 15;
+        background-color: var(--half-bg-color);
+        width: 50%;
+        border-radius: var(--round-corners);
+        font-size: 30px;
+        top: 180px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    #menu-area {
+        display: none;
+    }
 }
 
 #menu>li {
