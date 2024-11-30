@@ -140,8 +140,8 @@ function createProjectCard(data) {
 
 function getClassForProjectContainer() {
     let screenWidth = window.innerWidth;
-    // console.log(screenWidth);
     let colSize = "col-4";
+    
     if (screenWidth < 585) {
         colSize = "col-12";
     } else if (screenWidth < 992) {
@@ -177,10 +177,33 @@ document.getElementById("myNav").style.width = "0%";
 
 // change projects grid upon screen size change
 window.addEventListener('resize', function() {
-    let newProjectContainerClass = getClassForProjectContainer();
-    let projectContainers = document.getElementsByClassName("project-container");
-    for (let i = 0; i < projectContainers.length; i++) {
-        projectContainers[i].className = newProjectContainerClass;
+    let documentTitle = document.title;
+
+    if (documentTitle === "Projects") {
+        let newProjectContainerClass = getClassForProjectContainer();
+        let projectContainers = document.getElementsByClassName("project-container");
+        for (let i = 0; i < projectContainers.length; i++) {
+            projectContainers[i].className = newProjectContainerClass;
+        }
+    } else if (documentTitle === "Contact Me") {
+        let contactForm = document.getElementById("contact-form");
+        let contactInfo = document.getElementById("contact-info");
+
+        let screenWidth = window.innerWidth;
+        let colSize = ""; 
+
+        if (screenWidth < 768) {
+            let parentElement = contactForm.parentNode;
+            parentElement.insertBefore(contactInfo, contactForm);
+            colSize = "col-12";
+        } else {
+            let parentElement = contactInfo.parentNode;
+            parentElement.insertBefore(contactForm, contactInfo)
+            colSize = "col-6";
+        }
+
+        contactForm.className = colSize + " align-items-center contact-area";
+        contactInfo.className = colSize + " text-center contact-area";
     }
   });
   
