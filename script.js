@@ -207,3 +207,15 @@ window.addEventListener('resize', function() {
     }
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                return;
+            }
+        });
+    });
+    let allDivs = document.querySelectorAll('div');
+    allDivs.forEach((element) => observer.observe(element));
+})
