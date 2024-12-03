@@ -33,21 +33,21 @@ let projectsToShow = [
     {
         title: "Sudoku",
         languages: "Java, HTML, CSS",
-        description: "This is a classic game of sudoku written in Java. This game can both generate a new sudoku board based on different levels of difficulty, and also solve an incomplete puzzle using various algorithms.",
+        description: "This is a classic game of Sudoku written in Java. This game can both generate a new sudoku board based on different levels of difficulty, and also solve an incomplete puzzle using various algorithms.",
         link: "https://github.com/JohnsonHarleyR/sudoku_web/tree/master/src/main/java/JohnsonHarleyR/SudokuWeb/Sudoku",
         image: "images/projects/sdku.jpg"
     },
     {
         title: "Bracelet Pattern Maker",
         languages: "React, JavaScript, HTML, CSS",
-        description: "This is a handy tool for anyone interested in creating new patterns in order to make bracelets by hand. The user can the user change colors and directions of strands, as well as increase the number of strands in order to see what the bracelet would look like. Once a pattern has been created, the user can print it out in order to make the bracelet in real life.",
+        description: "This is a handy tool for anyone interested in creating new patterns in order to make bracelets by hand. The user can change the colors and directions of strands, as well as increase the number of strands in order to see what the bracelet would look like. Once a pattern has been created, the user can print it out in order to make the bracelet in real life.",
         link: "https://github.com/JohnsonHarleyR/bracelet-pattern-maker/tree/main/src/components/Maker",
         image: "images/projects/bracelets.jpg"
     },
     {
         title: "Wordles Solver and API",
         languages: "React, JavaScript, C#",
-        description: "For a contest, I created a program that allows a player to both play the game of wordles and solve a wordle. The program uses JavaScript along with an API, both of which I created, in order to do this. (Only the front-end is included in this link for now, but the C# API exists in a repo as well.)",
+        description: "For a contest, I created a program that allows a player to both play the game of Wordles and solve a Wordle puzzle. The program uses JavaScript, along with an API, both of which I created, in order to do this. (Only the front-end is included in this link for now, but the C# API exists in a repo as well.)",
         link: "https://github.com/JohnsonHarleyR/wordle-solver-react/tree/main/src",
         image: "images/projects/solve-wordles.jpg"
     },
@@ -61,7 +61,7 @@ let projectsToShow = [
     {
         title: "JavaScript Games",
         languages: "JavaScript, Java, CSS",
-        description: "These are a bunch of games I created when I was first learning how to code in JavaScript a few years ago. I had just completed a Java boot camp and decided to teach myself JavaScript. The games include a matching game, snake, basic sudoku, minesweeper, roadside bingo, tic tac toe, and an evolving pet game.",
+        description: "These are a bunch of games I created when I was first learning how to code in JavaScript a few years ago. I had just completed a Java boot camp and decided to teach myself JavaScript. The games include a matching game, Snake, basic Sudoku, Minesweeper, Roadside Bingo, Tic Tac Toe, and an evolving pet game.",
         link: "https://github.com/JohnsonHarleyR/JSGamesAndPractice/tree/master/src/main/resources/static/js",
         image: "images/projects/js-games.jpg"
     },
