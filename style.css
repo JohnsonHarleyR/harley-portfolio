@@ -210,6 +210,13 @@ h3 {
 
 }
 
+@media (width >=1400px) {
+    #menu {
+        left: 105px;
+    }
+
+}
+
 #hidden-menu {
     float: right;
     display: none;
