@@ -59,14 +59,19 @@ header {
 
 }
 
-header p {
+header a {
     font-weight: bold;
     color: var(--bg-color);
     font-family: var(--main-font);
+    text-decoration: none;
     margin: 0;
     padding: 0;
     margin-left: var(--margin);
     padding-left: var(--padding);
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 body {
