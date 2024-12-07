@@ -143,6 +143,7 @@ h3 {
     left: 195px;
     font-size: 25px;
     background: var(--half-bg-color);
+    max-width: 350px;
 }
 
 
